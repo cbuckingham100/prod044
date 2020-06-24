@@ -48,3 +48,17 @@ F:\PROJECTS\LinxDevelopment\VB.NET\PROD044\obj\Debug\PROD044.vbprojResolveAssemb
 F:\PROJECTS\LinxDevelopment\VB.NET\PROD044\obj\Debug\PROD044.frmMain.resources
 F:\PROJECTS\LinxDevelopment\VB.NET\PROD044\obj\Debug\PROD044.Resources.resources
 F:\PROJECTS\LinxDevelopment\VB.NET\PROD044\obj\Debug\PROD044.vbproj.GenerateResource.Cache
+F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\bin\Debug\PROD044.exe.config
+F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\obj\Debug\PROD044.exe
+F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\obj\Debug\PROD044.xml
+F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\obj\Debug\PROD044.pdb
+F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\bin\Debug\PROD044.exe
+F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\bin\Debug\PROD044.pdb
+F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\bin\Debug\PROD044.xml
+F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\bin\Debug\LinxLib.dll
+F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\bin\Debug\LinxLib.pdb
+F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\bin\Debug\LinxLib.xml
+F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\obj\Debug\PROD044.vbprojResolveAssemblyReference.cache
+F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\obj\Debug\PROD044.frmMain.resources
+F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\obj\Debug\PROD044.Resources.resources
+F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\obj\Debug\PROD044.vbproj.GenerateResource.Cache
