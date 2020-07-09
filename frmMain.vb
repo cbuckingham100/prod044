@@ -8,7 +8,7 @@ Public Class frmMain
 
     Private TextBoxOrder As New Dictionary(Of TextBox, TextBox)()
 
-    Public sExeVersion As String = "1.0"
+    Public sExeVersion As String = "1.1"
 
     Dim bTimerFlag As Boolean
 
