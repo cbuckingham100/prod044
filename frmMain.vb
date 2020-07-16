@@ -73,6 +73,9 @@ Public Class frmMain
 
         Dim xBindingsource As BindingSource = Nothing
         xBindingsource = PrinterExists(txtSerial.Text)
+
+        If xBindingsource Is Nothing Then Exit Sub
+
         Dim rBindingsource As BindingSource = Nothing
 
         Try
@@ -190,6 +193,11 @@ Public Class frmMain
             xDataAccess.Initialise()
             xDataAccess.SetScheme = "dbo"
             xDataAccess.SetTableName = "PrintheadRecentStarts"
+            If xDataAccess.GetConnectionErr() <> "" Then
+                MsgBox(xDataAccess.GetConnectionErr())
+                Exit Function
+            End If
+
             xDataAccess.SetDBWhere = "serial='" & Trim(sSerial) & "'"
 
             ReDim tDatafetch(12)
