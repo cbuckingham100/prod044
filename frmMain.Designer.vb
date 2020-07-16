@@ -41,7 +41,6 @@ Partial Class frmMain
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lblMessage = New System.Windows.Forms.Label()
         Me.lblEXEVersion = New System.Windows.Forms.Label()
-        Me.lblLinxLibVersion = New System.Windows.Forms.Label()
         Me.txtPart = New System.Windows.Forms.TextBox()
         Me.txtScannedSerial = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -60,7 +59,7 @@ Partial Class frmMain
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(27, 19)
+        Me.Label1.Location = New System.Drawing.Point(17, 19)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(141, 20)
         Me.Label1.TabIndex = 1
@@ -70,7 +69,7 @@ Partial Class frmMain
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(27, 104)
+        Me.Label2.Location = New System.Drawing.Point(17, 104)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(124, 20)
         Me.Label2.TabIndex = 2
@@ -98,7 +97,7 @@ Partial Class frmMain
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(27, 138)
+        Me.Label3.Location = New System.Drawing.Point(17, 138)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(82, 20)
         Me.Label3.TabIndex = 6
@@ -108,7 +107,7 @@ Partial Class frmMain
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(27, 171)
+        Me.Label4.Location = New System.Drawing.Point(17, 171)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(76, 20)
         Me.Label4.TabIndex = 7
@@ -118,7 +117,7 @@ Partial Class frmMain
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(27, 239)
+        Me.Label5.Location = New System.Drawing.Point(17, 239)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(78, 20)
         Me.Label5.TabIndex = 8
@@ -128,7 +127,7 @@ Partial Class frmMain
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(27, 206)
+        Me.Label6.Location = New System.Drawing.Point(17, 206)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(82, 20)
         Me.Label6.TabIndex = 9
@@ -178,7 +177,7 @@ Partial Class frmMain
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(27, 271)
+        Me.Label7.Location = New System.Drawing.Point(17, 271)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(87, 20)
         Me.Label7.TabIndex = 14
@@ -202,7 +201,7 @@ Partial Class frmMain
         '
         Me.lblMessage.AutoSize = True
         Me.lblMessage.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMessage.Location = New System.Drawing.Point(27, 308)
+        Me.lblMessage.Location = New System.Drawing.Point(17, 308)
         Me.lblMessage.Name = "lblMessage"
         Me.lblMessage.Size = New System.Drawing.Size(107, 25)
         Me.lblMessage.TabIndex = 16
@@ -211,20 +210,11 @@ Partial Class frmMain
         'lblEXEVersion
         '
         Me.lblEXEVersion.AutoSize = True
-        Me.lblEXEVersion.Location = New System.Drawing.Point(12, 363)
+        Me.lblEXEVersion.Location = New System.Drawing.Point(12, 391)
         Me.lblEXEVersion.Name = "lblEXEVersion"
         Me.lblEXEVersion.Size = New System.Drawing.Size(28, 13)
         Me.lblEXEVersion.TabIndex = 17
         Me.lblEXEVersion.Text = "v1.0"
-        '
-        'lblLinxLibVersion
-        '
-        Me.lblLinxLibVersion.AutoSize = True
-        Me.lblLinxLibVersion.Location = New System.Drawing.Point(12, 381)
-        Me.lblLinxLibVersion.Name = "lblLinxLibVersion"
-        Me.lblLinxLibVersion.Size = New System.Drawing.Size(28, 13)
-        Me.lblLinxLibVersion.TabIndex = 18
-        Me.lblLinxLibVersion.Text = "v1.0"
         '
         'txtPart
         '
@@ -248,7 +238,7 @@ Partial Class frmMain
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(27, 68)
+        Me.Label8.Location = New System.Drawing.Point(17, 68)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(49, 20)
         Me.Label8.TabIndex = 19
@@ -261,7 +251,6 @@ Partial Class frmMain
         Me.ClientSize = New System.Drawing.Size(384, 413)
         Me.Controls.Add(Me.txtScannedSerial)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.lblLinxLibVersion)
         Me.Controls.Add(Me.lblEXEVersion)
         Me.Controls.Add(Me.lblMessage)
         Me.Controls.Add(Me.txtOrder_time)
@@ -306,7 +295,6 @@ Partial Class frmMain
     Friend WithEvents Timer1 As Timer
     Friend WithEvents lblMessage As Label
     Friend WithEvents lblEXEVersion As Label
-    Friend WithEvents lblLinxLibVersion As Label
     Friend WithEvents txtPart As TextBox
     Friend WithEvents txtScannedSerial As TextBox
     Friend WithEvents Label8 As Label

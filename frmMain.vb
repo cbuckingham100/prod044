@@ -26,8 +26,7 @@ Public Class frmMain
         AddHandler txtSerial.Leave, AddressOf btnLoad_Click
 
         lblMessage.Text = ""
-        lblEXEVersion.Text = "Exe:" & sExeVersion
-        lblLinxLibVersion.Text = "Lib:" & sLinxLibVersion
+        lblEXEVersion.Text = "Ver:" & sExeVersion & ":" & sLinxLibVersion
 
         txtSerial.BackColor = Color.Yellow
 
@@ -108,7 +107,7 @@ Public Class frmMain
 
                     If Trim(txtSerial.Text) <> "" Then
 
-                        lblMessage.Text = "Searching for Printhead ..."
+                        lblMessage.Text = "Searching for printhead ..."
                         txtSerial.BackColor = Color.Orange
                         Application.DoEvents()
                         WaitHere(20)
@@ -119,10 +118,8 @@ Public Class frmMain
                             ' Colour the text box
                             lblMessage.Text = "Printhead accepted"
                             txtSerial.BackColor = Color.GreenYellow
-
                             Application.DoEvents()
-
-                            WaitHere(20)
+                            WaitHere(30)
 
                             txtSerial.BackColor = Color.White
                             lblMessage.Text = ""
@@ -134,7 +131,7 @@ Public Class frmMain
                                 lblMessage.Text = "Not able to insert printhead!"
                                 txtSerial.BackColor = Color.Red
                                 Application.DoEvents()
-                                WaitHere(20)
+                                WaitHere(30)
                             Else
                                 txtStart_time.Text = Format(Now, "yyyy-MM-dd HH:mm:ss")
                                 txtUse_time.Text = Format(Now, "yyyy-MM-dd HH:mm:ss")
@@ -149,15 +146,15 @@ Public Class frmMain
                             txtSerial.BackColor = Color.Yellow
 
                         Else
-                            lblMessage.Text = "Serial number not found!"
+                            lblMessage.Text = "Serial not found!"
                             txtSerial.BackColor = Color.Red
 
                             Application.DoEvents()
 
-                            WaitHere(20)
+                            WaitHere(30)
 
+                            lblMessage.Text = ""
                             txtSerial.BackColor = Color.Yellow
-                            txtScannedSerial.Text = txtSerial.Text
                             txtSerial.Text = ""
 
                         End If
