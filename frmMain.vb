@@ -108,11 +108,16 @@ Public Class frmMain
 
                     If Trim(txtSerial.Text) <> "" Then
 
+                        lblMessage.Text = "Searching for Printhead ..."
+                        txtSerial.BackColor = Color.Orange
+                        Application.DoEvents()
+                        WaitHere(20)
+
                         rBindingsource = Find_AS_part_no(txtSerial.Text)
 
                         If rBindingsource.Count = 1 Then
                             ' Colour the text box
-                            lblMessage.Text = "New Serial number accepted"
+                            lblMessage.Text = "Printhead accepted"
                             txtSerial.BackColor = Color.GreenYellow
 
                             Application.DoEvents()
@@ -126,7 +131,7 @@ Public Class frmMain
                             txtPart.Text = CType(rBindingsource.List(0), DataRowView).Item(2).ToString
 
                             If Not InsertPrintheadRecentStarts(Trim(txtSerial.Text), Trim(txtPart.Text)) Then
-                                lblMessage.Text = "Not able to insert serial number!"
+                                lblMessage.Text = "Not able to insert printhead!"
                                 txtSerial.BackColor = Color.Red
                                 Application.DoEvents()
                                 WaitHere(20)
@@ -313,4 +318,6 @@ Public Class frmMain
         Timer1.Enabled = False
 
     End Sub
+
+
 End Class

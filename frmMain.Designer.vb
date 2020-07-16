@@ -201,10 +201,10 @@ Partial Class frmMain
         'lblMessage
         '
         Me.lblMessage.AutoSize = True
-        Me.lblMessage.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMessage.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMessage.Location = New System.Drawing.Point(27, 308)
         Me.lblMessage.Name = "lblMessage"
-        Me.lblMessage.Size = New System.Drawing.Size(74, 20)
+        Me.lblMessage.Size = New System.Drawing.Size(107, 25)
         Me.lblMessage.TabIndex = 16
         Me.lblMessage.Text = "Message"
         '
