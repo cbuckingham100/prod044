@@ -62,5 +62,3 @@ F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\obj\Debug\PROD044.vb
 F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\obj\Debug\PROD044.frmMain.resources
 F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\obj\Debug\PROD044.Resources.resources
 F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\obj\Debug\PROD044.vbproj.GenerateResource.Cache
-F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\obj\Debug\PROD044.vbproj.CoreCompileInputs.cache
-F:\PROJECTS\LinxDevelopment\VB.NET\GitHubRepository\prod044\obj\Debug\PROD044.vbproj.CopyComplete
