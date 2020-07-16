@@ -40,12 +40,9 @@ Public Class frmMain
 
     Private Sub BarcodeInputKeyDown(sender As Object, e As KeyEventArgs)
         If e.KeyCode = Keys.Enter AndAlso ActiveControl.[GetType]() = GetType(TextBox) Then
-            Dim nextTextBox As TextBox
-            If TextBoxOrder.TryGetValue(DirectCast(ActiveControl, TextBox), nextTextBox) Then
-                e.Handled = True
-                e.SuppressKeyPress = True
-                nextTextBox.Focus()
-            End If
+            e.Handled = True
+            e.SuppressKeyPress = True
+            btnLoad.Focus()
         End If
     End Sub
 
