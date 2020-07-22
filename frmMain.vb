@@ -77,10 +77,7 @@ Public Class frmMain
             SerialNotFound()
             Exit Sub
         End If
-        If xBindingsource.Count = 0 Then
-            SerialNotFound()
-            Exit Sub
-        End If
+
 
         Dim rBindingsource As BindingSource = Nothing
 
@@ -195,10 +192,6 @@ Public Class frmMain
         txtSerial.Text = ""
 
     End Sub
-
-
-
-
 
 
     Private Function PrinterExists(ByRef sSerial As String) As BindingSource
