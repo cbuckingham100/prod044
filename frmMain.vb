@@ -8,7 +8,7 @@ Public Class frmMain
 
     Private TextBoxOrder As New Dictionary(Of TextBox, TextBox)()
 
-    Public sExeVersion As String = "1.2"
+    Public sExeVersion As String = "1.3"
 
     Dim bTimerFlag As Boolean
 
@@ -26,7 +26,7 @@ Public Class frmMain
         AddHandler txtSerial.Leave, AddressOf btnLoad_Click
 
         lblMessage.Text = ""
-        lblEXEVersion.Text = "Ver:" & sExeVersion & ":" & sLinxLibVersion
+        lblEXEVersion.Text = sExeVersion & ":" & sLinxLibVersion
 
         txtSerial.BackColor = Color.Yellow
 
@@ -73,7 +73,14 @@ Public Class frmMain
         Dim xBindingsource As BindingSource = Nothing
         xBindingsource = PrinterExists(txtSerial.Text)
 
-        If xBindingsource Is Nothing Then Exit Sub
+        If xBindingsource Is Nothing Then
+            SerialNotFound()
+            Exit Sub
+        End If
+        If xBindingsource.Count = 0 Then
+            SerialNotFound()
+            Exit Sub
+        End If
 
         Dim rBindingsource As BindingSource = Nothing
 
@@ -146,16 +153,7 @@ Public Class frmMain
                             txtSerial.BackColor = Color.Yellow
 
                         Else
-                            lblMessage.Text = "Serial not found!"
-                            txtSerial.BackColor = Color.Red
-
-                            Application.DoEvents()
-
-                            WaitHere(30)
-
-                            lblMessage.Text = ""
-                            txtSerial.BackColor = Color.Yellow
-                            txtSerial.Text = ""
+                            SerialNotFound()
 
                         End If
 
@@ -182,6 +180,25 @@ Public Class frmMain
 
 
     End Sub
+
+    Private Sub SerialNotFound()
+
+        lblMessage.Text = "Serial not found!"
+        txtSerial.BackColor = Color.Red
+
+        Application.DoEvents()
+
+        WaitHere(30)
+
+        lblMessage.Text = ""
+        txtSerial.BackColor = Color.Yellow
+        txtSerial.Text = ""
+
+    End Sub
+
+
+
+
 
 
     Private Function PrinterExists(ByRef sSerial As String) As BindingSource
