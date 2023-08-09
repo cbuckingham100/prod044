@@ -22,5 +22,8 @@ LinxLib
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:LinxLib.MailMerge">
+Imports Microsoft.Office.Interop
+</member>
 </members>
 </doc>
